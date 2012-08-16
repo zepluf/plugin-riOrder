@@ -1,0 +1,16 @@
+statuses:
+  cancel: 5
+  
+routes:
+  riorder_search:
+    pattern:  /riOrder/search/
+    defaults: { _controller: plugins\riOrder\AdminController::searchAction }
+  riorder_report:
+    pattern:  /riOrder/report/
+    defaults: { _controller: plugins\riOrder\AdminController::reportAction }    
+    
+global:    
+  backend:
+    menu:
+      customers:
+        - {text: Search Orders, link: ri.php/riOrder/search/}
