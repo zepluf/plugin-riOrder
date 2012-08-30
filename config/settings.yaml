@@ -3,10 +3,10 @@ statuses:
   
 routes:
   riorder_search:
-    pattern:  /riOrder/search/
+    pattern:  /search/
     defaults: { _controller: plugins\riOrder\AdminController::searchAction }
   riorder_report:
-    pattern:  /riOrder/report/
+    pattern:  /report/
     defaults: { _controller: plugins\riOrder\AdminController::reportAction }    
     
 global:    
